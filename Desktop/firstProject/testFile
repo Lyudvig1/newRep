@@ -1,0 +1,14 @@
+const assert = require('assert');
+
+describe('Login Page', function () {
+  it('should let you log in', function () {
+    browser.url('/');
+    browser.setValue('input[name="email"]', 'valid@user.com');
+    browser.setValue('input[name="password"]', 'hunter2');
+    browser.click('.button=Login');
+
+    const pageUrl = browser.getUrl();
+    assert.notEqual(pageUrl, 'http://testyourlog.in/example/');
+    assert.equal(pageUrl, 'http://testyourlog.in/example/logged-in.html?email=valid%40user.com&password=hunter2');
+  });
+});
