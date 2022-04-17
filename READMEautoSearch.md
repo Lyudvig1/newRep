@@ -1,5 +1,5 @@
 # newRep
-In this section of the Selenium JavaScript , we run a Selenium automation test with JavaScript. Here is the test scenario:
+In this section we run a Selenium automation test with JavaScript. Here is the test scenario:
 1.Launch the browser
 2.Go to www.google.com
 3.Searches a string value
